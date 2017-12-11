@@ -29,7 +29,7 @@ NSLocalizedStringFromTableInBundle(key, @"NSDateTimeAgo", [NSBundle bundleWithPa
     
     int value;
     
-    if(deltaSeconds < 60)
+    if(deltaSeconds < 600)
     {
         return [self stringFromFormat:@"%%d%@s" withValue:deltaSeconds];
     }
